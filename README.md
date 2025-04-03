@@ -7,7 +7,7 @@ Install Dependencies:
 ```
 Start the server:
 ```
-export FLASK_APP='app.py'
+python app.py
 ```
 Run the app:
 ```
@@ -42,6 +42,8 @@ CREATE DATABASE bloodbank;
 Use any database:
 ```
 USE bloodbank;
+```
+Execute the query given in database.txt file in mysql terminal to create reqiuired tables
 ```
 
 ## Snapshots
