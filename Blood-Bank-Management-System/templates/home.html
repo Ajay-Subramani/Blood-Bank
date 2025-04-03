@@ -1,0 +1,36 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+
+<div class="jumbotron text-centre" style="background-color:#f7f7f7;">
+  <h1>Welcome to Blood-Bank Monitoring System</h1>
+  <img src="{{url_for('static',filename='images.jpeg')}}" alt="Donate blood" width="1050" height="250" style="padding:15px;">
+  <p>Most people are able to give blood, but only 4% actually do. You can donate blood if you:
+<ul style="list-style-type:square">
+
+<li>are fit and healthy</li>
+<li>weigh at least 50kg (7st 12lb)</li>
+<li>are 17-66 years old (or 70 if you've given blood before)</li>
+<li>are over 70 and have given blood in the last two years</li>
+</ul></p>
+<hr class="m4">
+<div class="d-flex justify-content-center align-items-center" style="height: 20vh;">
+  <form class="text-center">
+    <div class="form-group">
+      <input class="form-control mb-3" type="text" placeholder="Search" style="width: 300px; font-size: 18px; padding: 10px;">
+    </div>
+    
+    <div class="form-group">
+      <select class="form-control mb-3" style="width: 300px; font-size: 18px;">
+        <option selected>Select options for custom search</option>
+        <option value="1">Search by donor</option>
+        <option value="2">Search by blood group</option>
+      </select>
+    </div>
+
+    <button class="btn" type="submit" style="background-color: #932007; color: white; font-size: 18px; padding: 10px 20px; border-radius: 5px;">Search</button>
+  </form>
+</div>
+
+{% endblock %}
